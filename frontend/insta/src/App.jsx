@@ -5,7 +5,9 @@ import { AuthProvider } from "./features/auth/auth.context"
 function App() {
 return(
 <AuthProvider>
+    <PostContextProvider>
  <Approutes/>
+ </PostContextProvider>
  </AuthProvider>
 )
 }

@@ -1,0 +1,115 @@
+.feed-page {
+    min-height: 100vh;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+    .feed {
+        width: min(100%, 500px);
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .posts {
+            background: #1b1b1b;
+            border-radius: 12px;
+            overflow: hidden;
+            color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+            .user {
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+                padding: 0.8rem 1rem;
+
+                .img-wrapper {
+                    width: 48px;
+                    height: 48px;
+                    padding: 2px;
+                    border-radius: 50%;
+                    background: linear-gradient(
+                        135deg,
+                        #feda75,
+                        #fa7e1e,
+                        #d62976,
+                        #962fbf,
+                        #4f5bd5
+                    );
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        border: 2px solid #1b1b1b;
+                    }
+                }
+
+                p {
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+
+            > img {
+                width: 100%;
+                aspect-ratio: 1;
+                object-fit: cover;
+                display: block;
+            }
+
+            .icon {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.8rem 1rem;
+
+                .left,
+                .right {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+
+                button {
+                    background: transparent;
+                    border: none;
+                    padding: 0;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg {
+                        width: 26px;
+                        height: 26px;
+                        fill: #fff;
+                        transition: all 0.2s ease;
+                    }
+
+                    &:hover svg {
+                        fill: #ff3030;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .bottom {
+                padding: 0 1rem 1rem;
+
+                .caption {
+                    font-size: 0.95rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+                 

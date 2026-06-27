@@ -1,0 +1,11 @@
+# Backend
+node_modules/
+.env
+.env.*
+
+# Frontend
+frontend/insta/node_modules/
+frontend/insta/dist/
+
+# Logs
+npm-debug.log*

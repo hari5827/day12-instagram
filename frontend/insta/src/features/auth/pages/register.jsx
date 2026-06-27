@@ -6,12 +6,18 @@ import  axios from 'axios'
      const [username, setUsername] = useState("")
      const [email, setEmail] = useState("")
       const [password, setPassword] = useState("")
-
+         const { handleRegister } = useAuth()
 
       
      async function handlesubmit(e){
          e.preventDefault()
-  
+             handleRegister(username, email, password)
+      .then((res) => {
+        console.log(res)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
 }
      return (
      <main>

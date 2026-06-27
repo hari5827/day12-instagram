@@ -1,0 +1,94 @@
+.feed-page {
+  min-height: 100vh;
+  background: #121212;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.feed-page .feed {
+  width: min(100%, 500px);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.feed-page .feed .posts {
+  background: #1b1b1b;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.feed-page .feed .posts .user {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1rem;
+}
+.feed-page .feed .posts .user .img-wrapper {
+  width: 48px;
+  height: 48px;
+  padding: 2px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.feed-page .feed .posts .user .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #1b1b1b;
+}
+.feed-page .feed .posts .user p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.feed-page .feed .posts > img {
+  width: 100%;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.feed-page .feed .posts .icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+}
+.feed-page .feed .posts .icon .left,
+.feed-page .feed .posts .icon .right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.feed-page .feed .posts .icon button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feed-page .feed .posts .icon button svg {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+  transition: all 0.2s ease;
+}
+.feed-page .feed .posts .icon button:hover svg {
+  fill: #ff3030;
+  transform: scale(1.1);
+}
+.feed-page .feed .posts .bottom {
+  padding: 0 1rem 1rem;
+}
+.feed-page .feed .posts .bottom .caption {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}/*# sourceMappingURL=Feed.css.map */
