@@ -60,6 +60,9 @@
   align-items: center;
   padding: 0.8rem 1rem;
 }
+.feed-page .feed .posts .icon .like {
+  fill: #ff3030;
+}
 .feed-page .feed .posts .icon .left,
 .feed-page .feed .posts .icon .right {
   display: flex;

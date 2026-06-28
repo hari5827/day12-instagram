@@ -8,7 +8,7 @@ const api = axios.create({
 
 
 export async function getFeed() {
-    const response = await api.get('/api/posts/Feed')
+    const response = await api.get('/api/post/Feed')
     return response.data
 }
 

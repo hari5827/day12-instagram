@@ -2,7 +2,8 @@
 import React from 'react'
 import "../style/Feed.scss"
 import Post from "../components/post";
-import {usehook} from "../HOOK/usehook"
+import usePost from '../HOOK/usehook';
+import { useEffect } from "react";
 
 const Feed = ()=>{
 
@@ -27,7 +28,9 @@ const { feed, handleGetFeed,loading, handleLike, handleUnLike } = usePost()
         <main className="feed-page">
              
             <div className="feed">
-            
+             {feed.map(post=>{
+                        return <Post user={post.user} post={post} loading={loading} handleLike={handleLike}  handleUnLike={handleUnLike}/>
+                    })}
             </div>
         </main>
     )

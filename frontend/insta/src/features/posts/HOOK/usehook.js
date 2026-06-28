@@ -42,3 +42,5 @@ export const usePost = () => {
     return { loading, feed, post, handleGetFeed, handleCreatePost, handleLike, handleUnLike }
 
 }
+
+export default usePost
