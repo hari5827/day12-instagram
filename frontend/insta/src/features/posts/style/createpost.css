@@ -1,0 +1,18 @@
+.post-image-label {
+  background-color: #e8e1de;
+  color: rgb(25, 25, 25);
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.form-container h1 {
+  color: rgb(151, 192, 214);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.post-image-label:hover {
+  background: #302ca4;
+}/*# sourceMappingURL=createpost.css.map */

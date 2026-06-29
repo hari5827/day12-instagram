@@ -1,0 +1,14 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+      width:min(100%,500px);
+   margin: 0 auto 1.5rem auto;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+}
+
+.nav-bar p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(48, 8, 207);
+}

@@ -16,11 +16,19 @@ export const usePost = () => {
     }
 
     const handleCreatePost = async (imageFile, caption) => {
-        setLoading(true)
-        const data = await createPost(imageFile, caption)
-        setFeed([ data.post, ...feed ])
-        setLoading(false)
+            try {
+        setLoading(true);
+
+        const data = await createPost(imageFile, caption);
+
+        setFeed([data.post, ...feed]);
+    } catch (err) {
+        console.log(err);
+    } finally {
+        setLoading(false);
     }
+}
+    
 
     const handleLike = async (post) => {
 

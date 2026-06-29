@@ -3,6 +3,7 @@ import Approutes from "./Approutes"
 import "./features/auth/styles/form.scss"
 import { AuthProvider } from "./features/auth/auth.context"
 import { PostContextProvider } from "./features/posts/post.context"
+
 function App() {
 return(
 <AuthProvider>

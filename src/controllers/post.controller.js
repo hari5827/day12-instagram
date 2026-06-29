@@ -122,7 +122,7 @@ async function likePostController(req , res){
 
 async function unLikePostController(req, res) {
     const postId = req.params.postId
-    const username = req.user.username
+    const username = req.user.id
 
     const isLiked = await likeModel.findOne({
         post: postId,

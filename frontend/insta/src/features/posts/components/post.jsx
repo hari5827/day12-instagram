@@ -1,7 +1,10 @@
 
 import React from 'react'
+import usePost from '../HOOK/usehook';
 
-const Post = ({user,post}) => {
+const Post = ({ user, post, handleLike, handleUnLike }) => {
+ 
+
   return (
          <div className="posts">
                    <div className="user">
